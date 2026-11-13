@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mapas 3D de estaciones de esquí · Cota</title>
+<meta name="description" content="Mapas 3D interactivos de 14 estaciones de esquí: relieve LiDAR, fotografía aérea, sol y sombras, viento e inclinación.">
+<link rel="canonical" href="https://julioquircea.github.io/cota/mapas/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cota">
+<meta property="og:title" content="Mapas 3D de estaciones de esquí · Cota">
+<meta property="og:description" content="Mapas 3D interactivos de 14 estaciones de esquí: relieve LiDAR, fotografía aérea, sol y sombras, viento e inclinación.">
+<meta property="og:image" content="https://julioquircea.github.io/cota/assets/img/og.jpg">
+<meta property="og:url" content="https://julioquircea.github.io/cota/mapas/">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FAF6ED" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#152019" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/lora-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site-c2c6870f44.css">
+</head>
+<body class="is-app" data-root="../">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="brand" href="../" aria-label="Cota, inicio"><span>Cota</span></a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="../estaciones/">Estaciones</a>
+      <a href="../mapas/" aria-current="page">Mapas 3D</a>
+      <a href="../nieve/">Nieve</a>
+      <a href="../agenda/">Agenda</a>
+      <a href="../app/">La app</a>
+    </nav>
+    <a class="btn btn-sm btn-ghost account-link" href="../cuenta/" data-account><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.500" r="3.700"/><path d="M4.500 20c.900-3.700 3.900-5.500 7.500-5.500s6.600 1.800 7.500 5.500"/></svg><span>Mi cuenta</span></a>
+    <button class="nav-toggle" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menú"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+<main id="contenido">
+<section class="maps" id="maps">
+  <aside class="maps-side">
+    <div class="maps-head"><p class="eyebrow">14 mapas</p><h1>Mapas 3D</h1></div>
+    <label class="field field-search"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="sr">Buscar</span><input type="search" id="m-q" placeholder="Buscar estación" autocomplete="off"></label>
+    <ul class="maps-list" id="m-list">
+      <li><button type="button" data-id="baqueira" data-name="baqueira-beret"><b>Baqueira-Beret</b><span>Pirineo catalán · 147 km</span></button></li>
+      <li><button type="button" data-id="formigal" data-name="formigal"><b>Formigal</b><span>Pirineo aragonés · 102 km</span></button></li>
+      <li><button type="button" data-id="sierra-nevada" data-name="sierra nevada"><b>Sierra Nevada</b><span>Sierra Nevada · 102 km</span></button></li>
+      <li><button type="button" data-id="candanchu" data-name="astún y candanchú"><b>Astún y Candanchú</b><span>Pirineo aragonés · 68 km</span></button></li>
+      <li><button type="button" data-id="panticosa" data-name="panticosa"><b>Panticosa</b><span>Pirineo aragonés · 18 km</span></button></li>
+      <li><button type="button" data-id="boi-taull" data-name="boí taüll"><b>Boí Taüll</b><span>Pirineo catalán · 36 km</span></button></li>
+      <li><button type="button" data-id="espot" data-name="espot"><b>Espot</b><span>Pirineo catalán · 20 km</span></button></li>
+      <li><button type="button" data-id="port-aine" data-name="port ainé"><b>Port Ainé</b><span>Pirineo catalán · 22 km</span></button></li>
+      <li><button type="button" data-id="la-molina" data-name="la molina"><b>La Molina</b><span>Pirineo catalán · 39 km</span></button></li>
+      <li><button type="button" data-id="masella" data-name="masella"><b>Masella</b><span>Pirineo catalán · 60 km</span></button></li>
+      <li><button type="button" data-id="port-del-comte" data-name="port del comte"><b>Port del Comte</b><span>Pirineo catalán · 27 km</span></button></li>
+      <li><button type="button" data-id="vall-de-nuria" data-name="vall de núria"><b>Vall de Núria</b><span>Pirineo catalán · 6 km</span></button></li>
+      <li><button type="button" data-id="vallter" data-name="vallter 2000"><b>Vallter 2000</b><span>Pirineo catalán · 15 km</span></button></li>
+      <li><button type="button" data-id="valdesqui" data-name="valdesquí"><b>Valdesquí</b><span>Sistema Central · 21 km</span></button></li>
+    </ul>
+    <p class="fine">Los mapas descargan datos según te mueves. Mejor con wifi y en un ordenador; en el móvil, la app los guarda para usarlos sin cobertura.</p>
+  </aside>
+  <div class="maps-main">
+    <div class="maps-bar">
+      <button type="button" class="btn btn-sm btn-ghost maps-open" id="m-open"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg> Estaciones</button>
+      <strong id="m-title"></strong>
+      <label class="field field-inline" id="m-variant-box" hidden><span class="sr">Vista</span><select id="m-variant">
+        <option value="winter-snow">Invierno nevado</option><option value="summer-original">Verano · fotografía aérea</option><option value="winter-game">Invierno · paisaje alpino</option><option value="summer-game">Verano · paisaje alpino</option>
+      </select></label>
+      <a class="btn btn-sm btn-ghost" id="m-station" href="#">Ficha</a>
+      <button type="button" class="btn btn-sm btn-ghost" id="m-full"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg><span class="sr">Pantalla completa</span></button>
+    </div>
+    <div class="maps-frame" id="m-frame"><p class="maps-status" id="m-status">Elige una estación</p></div>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="../"><span>Cota</span></a>
+      <p>Mapas, nieve y viajes de esquí con amigos. Un proyecto independiente: no es la web oficial de ninguna estación.</p>
+    </div>
+    <div><h2>Explorar</h2><ul><li><a href="../estaciones/">Estaciones</a></li><li><a href="../mapas/">Mapas 3D</a></li><li><a href="../nieve/">Nieve prevista</a></li><li><a href="../agenda/">Agenda</a></li></ul></div>
+    <div><h2>Cota</h2><ul><li><a href="../app/">La app para Android</a></li><li><a href="../cuenta/">Mi cuenta</a></li><li><a href="../app/#hoja-de-ruta">Hoja de ruta</a></li></ul></div>
+    <div><h2>Transparencia</h2><ul><li><a href="../creditos/">Créditos y licencias</a></li><li><a href="../privacidad/">Privacidad</a></li></ul></div>
+  </div>
+  <div class="wrap foot-note">
+    <p>El estado de pistas y remontes lo publica cada estación: consulta siempre su parte oficial antes de salir. Cartografía © colaboradores de OpenStreetMap; previsión de Open-Meteo. <a href="../creditos/">Todas las fuentes</a>.</p>
+    <p>© 2026 Cota</p>
+  </div>
+</footer>
+<script type="application/json" id="page-data">{"stations":[{"id":"baqueira","slug":"baqueira-beret","name":"Baqueira-Beret","zone":"Pirineo catalán","province":"Lleida","country":"España","km":147,"pistes":158,"min":1476,"max":2601,"drop":1125,"lifts":36,"by":{"verde":14,"azul":62,"roja":59,"negra":23,"sin":0},"families":{"telecabina":2,"telesilla":18,"telesqui":9,"cinta":7},"longest":{"name":"Colhet de Marimanha","km":4.2,"color":"azul"},"lat":42.7018,"lon":0.9698,"viewer":"mapa","snow":true},{"id":"formigal","slug":"formigal","name":"Formigal","zone":"Pirineo aragonés","province":"Huesca","country":"España","km":102,"pistes":104,"min":1501,"max":2380,"drop":879,"lifts":24,"by":{"verde":3,"azul":28,"roja":33,"negra":37,"sin":3},"families":{"telecabina":0,"telesilla":13,"telesqui":6,"cinta":5},"longest":{"name":"El Bosque","km":3.4,"color":"roja"},"lat":42.7717,"lon":-0.406,"viewer":"mapa-formigal","snow":false},{"id":"sierra-nevada","slug":"sierra-nevada","name":"Sierra Nevada","zone":"Sierra Nevada","province":"Granada","country":"España","km":102,"pistes":159,"min":2138,"max":3301,"drop":1163,"lifts":22,"by":{"verde":21,"azul":61,"roja":70,"negra":7,"sin":0},"families":{"telecabina":2,"telesilla":14,"telesqui":1,"cinta":5},"longest":{"name":"Loma Dílar","km":3.7,"color":"azul"},"lat":37.0728,"lon":-3.3872,"viewer":"mapa-sierra-nevada","snow":false},{"id":"candanchu","slug":"astun-candanchu","name":"Astún y Candanchú","zone":"Pirineo aragonés","province":"Huesca","country":"España","km":68,"pistes":136,"min":1514,"max":2272,"drop":758,"lifts":41,"by":{"verde":20,"azul":42,"roja":41,"negra":30,"sin":3},"families":{"telecabina":0,"telesilla":12,"telesqui":21,"cinta":8},"longest":{"name":"Loma Verde","km":2.9,"color":"negra"},"lat":42.7922,"lon":-0.5195,"viewer":"mapa-candanchu","snow":false},{"id":"panticosa","slug":"panticosa","name":"Panticosa","zone":"Pirineo aragonés","province":"Huesca","country":"España","km":18,"pistes":36,"min":1145,"max":2203,"drop":1058,"lifts":15,"by":{"verde":3,"azul":15,"roja":15,"negra":3,"sin":0},"families":{"telecabina":1,"telesilla":5,"telesqui":4,"cinta":5},"longest":{"name":"Mazaranuala","km":1.3,"color":"roja"},"lat":42.7004,"lon":-0.2703,"viewer":"mapa-panticosa","snow":false},{"id":"boi-taull","slug":"boi-taull","name":"Boí Taüll","zone":"Pirineo catalán","province":"Lleida","country":"España","km":36,"pistes":52,"min":2039,"max":2748,"drop":709,"lifts":9,"by":{"verde":5,"azul":7,"roja":25,"negra":15,"sin":0},"families":{"telecabina":0,"telesilla":6,"telesqui":2,"cinta":1},"longest":{"name":"Vista Aran - Collbirrós","km":3.4,"color":"roja"},"lat":42.4729,"lon":0.8751,"viewer":"mapa-boi-taull","snow":false},{"id":"espot","slug":"espot","name":"Espot","zone":"Pirineo catalán","province":"Lleida","country":"España","km":20,"pistes":30,"min":1511,"max":2290,"drop":779,"lifts":6,"by":{"verde":4,"azul":15,"roja":7,"negra":4,"sin":0},"families":{"telecabina":0,"telesilla":3,"telesqui":1,"cinta":2},"longest":{"name":"Camí del Llop","km":2.1,"color":"azul"},"lat":42.5482,"lon":1.0797,"viewer":"mapa-espot","snow":false},{"id":"port-aine","slug":"port-aine","name":"Port Ainé","zone":"Pirineo catalán","province":"Lleida","country":"España","km":22,"pistes":46,"min":1678,"max":2425,"drop":747,"lifts":8,"by":{"verde":20,"azul":7,"roja":13,"negra":6,"sin":0},"families":{"telecabina":0,"telesilla":3,"telesqui":3,"cinta":2},"longest":{"name":"Estadi","km":1.5,"color":"roja"},"lat":42.419,"lon":1.2121,"viewer":"mapa-port-aine","snow":false},{"id":"la-molina","slug":"la-molina","name":"La Molina","zone":"Pirineo catalán","province":"Girona","country":"España","km":39,"pistes":63,"min":1590,"max":2347,"drop":757,"lifts":14,"by":{"verde":11,"azul":31,"roja":18,"negra":3,"sin":0},"families":{"telecabina":1,"telesilla":9,"telesqui":1,"cinta":3},"longest":{"name":"Volta Muntanya Sagrada","km":1.8,"color":"azul"},"lat":42.3239,"lon":1.9434,"viewer":"mapa-la-molina","snow":false},{"id":"masella","slug":"masella","name":"Masella","zone":"Pirineo catalán","province":"Girona","country":"España","km":60,"pistes":108,"min":1615,"max":2522,"drop":907,"lifts":21,"by":{"verde":6,"azul":46,"roja":43,"negra":13,"sin":0},"families":{"telecabina":2,"telesilla":5,"telesqui":10,"cinta":4},"longest":{"name":"Barcelona","km":2.9,"color":"negra"},"lat":42.3352,"lon":1.9034,"viewer":"mapa-masella","snow":false},{"id":"port-del-comte","slug":"port-del-comte","name":"Port del Comte","zone":"Pirineo catalán","province":"Lleida","country":"España","km":27,"pistes":36,"min":1705,"max":2309,"drop":604,"lifts":19,"by":{"verde":5,"azul":16,"roja":11,"negra":3,"sin":1},"families":{"telecabina":0,"telesilla":6,"telesqui":9,"cinta":4},"longest":{"name":"la Serp","km":2.8,"color":"azul"},"lat":42.1678,"lon":1.5505,"viewer":"mapa-port-del-comte","snow":false},{"id":"vall-de-nuria","slug":"vall-de-nuria","name":"Vall de Núria","zone":"Pirineo catalán","province":"Girona","country":"España","km":6,"pistes":20,"min":1964,"max":2259,"drop":295,"lifts":7,"by":{"verde":3,"azul":11,"roja":4,"negra":2,"sin":0},"families":{"telecabina":1,"telesilla":1,"telesqui":3,"cinta":2},"longest":{"name":"Mulleres","km":0.9,"color":"roja"},"lat":42.3966,"lon":2.158,"viewer":"mapa-vall-de-nuria","snow":false},{"id":"vallter","slug":"vallter-2000","name":"Vallter 2000","zone":"Pirineo catalán","province":"Girona","country":"España","km":15,"pistes":39,"min":2009,"max":2496,"drop":487,"lifts":10,"by":{"verde":8,"azul":16,"roja":11,"negra":4,"sin":0},"families":{"telecabina":0,"telesilla":2,"telesqui":5,"cinta":3},"longest":{"name":"El Xalet","km":1.4,"color":"azul"},"lat":42.4253,"lon":2.2554,"viewer":"mapa-vallter","snow":false},{"id":"valdesqui","slug":"valdesqui","name":"Valdesquí","zone":"Sistema Central","province":"Madrid","country":"España","km":21,"pistes":40,"min":1870,"max":2263,"drop":393,"lifts":15,"by":{"verde":13,"azul":18,"roja":6,"negra":2,"sin":1},"families":{"telecabina":0,"telesilla":6,"telesqui":7,"cinta":2},"longest":{"name":"Las Zetas","km":1.5,"color":"verde"},"lat":40.7978,"lon":-3.9713,"viewer":"mapa-valdesqui","snow":false}],"catalog":"visor/catalogo.json"}</script>
+<script type="module" src="../assets/js/site-MY2CIYIR.js"></script>
+<script type="module" src="../assets/js/maps-GJOEMOTN.js"></script>
+</body>
+</html>

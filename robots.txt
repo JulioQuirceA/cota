@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /cota/visor/
+Sitemap: https://julioquircea.github.io/cota/sitemap.xml

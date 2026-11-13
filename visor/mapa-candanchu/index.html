@@ -1,0 +1,60 @@
+<!doctype html><html lang="es" data-station="candanchu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Mapa 3D · Astún y Candanchú</title><style>
+:root{--panel:rgba(250,251,252,.86);--ink:#1b2530;--muted:#55626f;--line:rgba(27,37,48,.14);--on:#16324a;--on-ink:#fff;--focus:#2f6fb0;
+  --f-ui:system-ui,-apple-system,"Segoe UI",sans-serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--panel:rgba(22,28,35,.84);--ink:#e7edf3;--muted:#a3b0bc;--line:rgba(231,237,243,.16);--on:#d9e6f2;--on-ink:#0f1720;--focus:#8cc0f0;color-scheme:dark}}
+:root[data-theme="dark"]{--panel:rgba(22,28,35,.84);--ink:#e7edf3;--muted:#a3b0bc;--line:rgba(231,237,243,.16);--on:#d9e6f2;--on-ink:#0f1720;--focus:#8cc0f0;color-scheme:dark}
+html,body{height:100%}
+body{margin:0;background:#9fb6cf;color:var(--ink);font-family:var(--f-ui);overflow:hidden}
+#app{position:fixed;inset:0;overflow:hidden}
+.view{position:absolute;inset:0}
+.view canvas{position:absolute;inset:0;display:block;touch-action:none}
+canvas.labels{pointer-events:none}
+.ui{position:absolute;z-index:3;top:calc(10px + env(safe-area-inset-top,0px));left:max(12px,env(safe-area-inset-left,0px));display:flex;gap:6px;flex-wrap:wrap}
+.seg{display:flex;background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:2px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.seg button{border:0;background:transparent;color:var(--ink);font:500 13px/1 var(--f-ui);padding:7px 11px;border-radius:7px;cursor:pointer}
+.seg button.on{background:var(--on);color:var(--on-ink)}
+.seg button:focus-visible,#infoBtn:focus-visible{outline:2px solid var(--focus);outline-offset:1px}
+.status{position:absolute;z-index:4;inset:0;display:grid;place-items:center;font:600 15px var(--f-ui);color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.5);pointer-events:none}
+.attr{position:absolute;z-index:3;right:0;bottom:0;max-width:min(720px,100%);box-sizing:border-box;padding:5px 9px calc(5px + env(safe-area-inset-bottom,0px));font:11px/1.35 var(--f-ui);background:var(--panel);color:var(--muted);border-top-left-radius:8px;border:1px solid var(--line);border-right:0;border-bottom:0}
+#brand{position:absolute;z-index:3;left:max(12px,env(safe-area-inset-left,0px));bottom:calc(10px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:6px;align-items:flex-start;max-width:calc(100% - 24px)}
+#infoBtn{border:1px solid var(--line);background:var(--panel);color:var(--ink);font:600 13px var(--f-ui);padding:7px 11px;border-radius:9px;cursor:pointer;backdrop-filter:blur(8px)}
+#note{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;max-width:min(430px,calc(100vw - 40px));font-size:12.5px;line-height:1.45;backdrop-filter:blur(8px)}
+#note h2{font-size:14px;margin:0 0 6px}
+#note p{margin:6px 0 0}
+@media (max-width:560px){.attr{font-size:9.5px}#brand{bottom:calc(52px + env(safe-area-inset-bottom,0px))}}
+
+.ui{left:76px;right:76px;justify-content:center}.seg button{min-height:44px;padding:8px 18px;font-size:14px}.attr{font-size:9px;padding:3px 6px;max-width:100%;background:rgba(250,251,252,.8)}.attr a{color:inherit}.layers{top:70px;max-height:calc(100dvh - 120px);box-sizing:border-box}.layers .lrow{min-height:44px}.layers .lx{min-height:44px;min-width:60px}.load-error{position:absolute;inset:90px 18px auto;padding:18px;background:var(--panel);border-radius:12px}.load-error button{min-height:44px}.layers .game-options{position:static;display:flex;flex-direction:column;padding:16px;gap:12px}.game-options .seg{flex-wrap:wrap}
+/* Solo interfaz de los visores derivados; no modifica el terreno ni los originales. */
+:root {
+  --panel: rgba(250,246,237,.97);
+  --ink: #193928;
+  --muted: #576052;
+  --line: rgba(91,83,58,.24);
+  --on: #214e34;
+  --on-ink: #fffdf7;
+  --focus: #214e34;
+}
+.seg { border-radius:13px; padding:0; box-shadow:0 1px 5px #27321a14; }
+.seg button { border-radius:12px; }
+.layers { background:var(--panel); border-radius:18px; box-shadow:0 4px 20px #16241926; padding:14px 16px; }
+.layers .lh strong { font-family:Georgia,serif; font-size:18px; }
+.layers section { padding-block:12px; }
+.layers .lx { border:1px solid var(--line); border-radius:10px; }
+.layers input { accent-color:var(--focus); }
+.attr { color:var(--muted); background:var(--panel); }
+/* Geometry is supplied by the local Android parent; the canvas stays full size. */
+.ui { top:calc(10px + var(--cota-safe-top, env(safe-area-inset-top, 0px))); left:calc(76px + var(--cota-safe-left, 0px)); right:calc(76px + var(--cota-safe-right, 0px)); }
+.layers { top:calc(70px + var(--cota-safe-top, 0px)); max-height:calc(100dvh - 120px - var(--cota-safe-top, 0px) - var(--cota-safe-bottom, 0px)); left:calc(12px + var(--cota-safe-left, 0px)); right:calc(12px + var(--cota-safe-right, 0px)); }
+.attr { right:var(--cota-safe-right, 0px); bottom:var(--cota-safe-bottom, 0px); max-width:calc(100% - var(--cota-safe-left, 0px) - var(--cota-safe-right, 0px)); }
+@media (prefers-color-scheme:dark) {
+  :root:not([data-theme="light"]) { --panel:rgba(25,37,29,.97); --ink:#f6efdf; --muted:#c1c6b5; --line:rgba(235,232,207,.23); --on:#b6cfac; --on-ink:#14261a; --focus:#b6cfac; }
+}
+:root[data-theme="dark"] { --panel:rgba(25,37,29,.97); --ink:#f6efdf; --muted:#c1c6b5; --line:rgba(235,232,207,.23); --on:#b6cfac; --on-ink:#14261a; --focus:#b6cfac; }
+
+/* The original game has no layer dialog; keep its controls above the canvas. */
+.layers{position:absolute;z-index:5;overflow:auto}
+.layers[hidden]{display:none}
+.layers .lh{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.layers .lx{background:var(--panel);color:var(--ink);font:600 14px var(--f-ui);padding:8px 12px}
+.layers .lsmall{font-size:13px;line-height:1.45;color:var(--muted)}
+</style></head><body><div id="app"></div><script src="../mapa-shared/game.js"></script></body></html>

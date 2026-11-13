@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Estaciones de esquí: directorio y comparador · Cota</title>
+<meta name="description" content="Directorio de 21 estaciones de esquí con kilómetros de pistas, cotas, remontes, mapa 3D y nieve prevista. Compara hasta cuatro estaciones.">
+<link rel="canonical" href="https://julioquircea.github.io/cota/estaciones/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cota">
+<meta property="og:title" content="Estaciones de esquí: directorio y comparador · Cota">
+<meta property="og:description" content="Directorio de 21 estaciones de esquí con kilómetros de pistas, cotas, remontes, mapa 3D y nieve prevista. Compara hasta cuatro estaciones.">
+<meta property="og:image" content="https://julioquircea.github.io/cota/assets/img/og.jpg">
+<meta property="og:url" content="https://julioquircea.github.io/cota/estaciones/">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FAF6ED" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#152019" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/lora-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site-c2c6870f44.css">
+</head>
+<body class="" data-root="../">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="brand" href="../" aria-label="Cota, inicio"><span>Cota</span></a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="../estaciones/" aria-current="page">Estaciones</a>
+      <a href="../mapas/">Mapas 3D</a>
+      <a href="../nieve/">Nieve</a>
+      <a href="../agenda/">Agenda</a>
+      <a href="../app/">La app</a>
+    </nav>
+    <a class="btn btn-sm btn-ghost account-link" href="../cuenta/" data-account><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.500" r="3.700"/><path d="M4.500 20c.900-3.700 3.900-5.500 7.500-5.500s6.600 1.800 7.500 5.500"/></svg><span>Mi cuenta</span></a>
+    <button class="nav-toggle" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menú"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+<main id="contenido">
+<section class="page-head wrap">
+  <p class="eyebrow">21 estaciones</p>
+  <h1>Estaciones de esquí</h1>
+  <p class="lead">España, Andorra y el Pirineo francés. Las cifras de pistas, cotas y remontes se calculan igual para todas a partir de la cartografía de OpenStreetMap, así que se pueden comparar entre sí.</p>
+</section>
+<section class="wrap">
+  <div class="toolbar" id="toolbar">
+    <label class="field field-search"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="sr">Buscar</span><input type="search" id="f-q" placeholder="Buscar por nombre o zona" autocomplete="off"></label>
+    <label class="field"><span>Ordenar</span><select id="f-sort">
+      <option value="km">Más kilómetros</option><option value="max">Mayor altitud</option><option value="drop">Más desnivel</option><option value="lifts">Más remontes</option><option value="snow">Más nieve prevista</option><option value="name">Nombre</option>
+    </select></label>
+    <label class="check"><input type="checkbox" id="f-3d"> Solo con mapa 3D</label>
+  </div>
+  <div class="chips" id="f-zones" role="group" aria-label="Zona">
+    <button type="button" class="chip" data-zone="" aria-pressed="true">Todas</button>
+    <button type="button" class="chip" data-zone="pirineo-catalan" aria-pressed="false">Pirineo catalán</button><button type="button" class="chip" data-zone="pirineo-aragones" aria-pressed="false">Pirineo aragonés</button><button type="button" class="chip" data-zone="sierra-nevada" aria-pressed="false">Sierra Nevada</button><button type="button" class="chip" data-zone="sistema-central" aria-pressed="false">Sistema Central</button><button type="button" class="chip" data-zone="cordillera-cantabrica" aria-pressed="false">Cordillera Cantábrica</button><button type="button" class="chip" data-zone="sistema-iberico" aria-pressed="false">Sistema Ibérico</button><button type="button" class="chip" data-zone="andorra" aria-pressed="false">Andorra</button><button type="button" class="chip" data-zone="pirineo-frances" aria-pressed="false">Pirineo francés</button>
+  </div>
+  <p class="fine" id="f-count" aria-live="polite"></p>
+  <div class="grid cards" id="cards"><article class="card st-card" data-id="baqueira" data-name="baqueira-beret" data-zone="pirineo-catalan" data-km="147" data-max="2601" data-min="1476" data-drop="1125" data-lifts="36" data-3d="1">
+  <a class="card-media" href="../estaciones/baqueira-beret/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/img/estaciones/baqueira-640.webp" alt="" width="640" height="400">
+    <span class="tag tag-3d"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.500v-9L12 3z"/><path d="M4 7.5 12 12l8-4.500M12 12v9"/></svg> Mapa 3D</span>
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Pirineo catalán · Lleida</p>
+    <h3><a href="../estaciones/baqueira-beret/">Baqueira-Beret</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>147 km</dd></div>
+      <div><dt>Cotas</dt><dd>1476–2601 m</dd></div>
+      <div><dt>Remontes</dt><dd>36</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 14 verdes, 62 azuls, 59 rojas, 23 negras"><i class="d-verde" style="flex:0.0334"></i><i class="d-azul" style="flex:0.4168"></i><i class="d-roja" style="flex:0.3793"></i><i class="d-negra" style="flex:0.1705"></i></span>
+    <p class="snow-chip" data-snow="baqueira" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="baqueira"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="formigal" data-name="formigal" data-zone="pirineo-aragones" data-km="102" data-max="2380" data-min="1501" data-drop="879" data-lifts="24" data-3d="1">
+  <a class="card-media" href="../estaciones/formigal/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/img/estaciones/formigal-640.webp" alt="" width="640" height="400">
+    <span class="tag tag-3d"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.500v-9L12 3z"/><path d="M4 7.5 12 12l8-4.500M12 12v9"/></svg> Mapa 3D</span>
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Pirineo aragonés · Huesca</p>
+    <h3><a href="../estaciones/formigal/">Formigal</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>102 km</dd></div>
+      <div><dt>Cotas</dt><dd>1501–2380 m</dd></div>
+      <div><dt>Remontes</dt><dd>24</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 3 verdes, 28 azuls, 33 rojas, 37 negras, 3 sin clasificar"><i class="d-verde" style="flex:0.0127"></i><i class="d-azul" style="flex:0.2595"></i><i class="d-roja" style="flex:0.3434"></i><i class="d-negra" style="flex:0.3678"></i><i class="d-sin" style="flex:0.0166"></i></span>
+    <p class="snow-chip" data-snow="formigal" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="formigal"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="sierra-nevada" data-name="sierra nevada" data-zone="sierra-nevada" data-km="102" data-max="3301" data-min="2138" data-drop="1163" data-lifts="22" data-3d="1">
+  <a class="card-media" href="../estaciones/sierra-nevada/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/img/estaciones/sierra-nevada-640.webp" alt="" width="640" height="400">
+    <span class="tag tag-3d"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.500v-9L12 3z"/><path d="M4 7.5 12 12l8-4.500M12 12v9"/></svg> Mapa 3D</span>
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Sierra Nevada · Granada</p>
+    <h3><a href="../estaciones/sierra-nevada/">Sierra Nevada</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>102 km</dd></div>
+      <div><dt>Cotas</dt><dd>2138–3301 m</dd></div>
+      <div><dt>Remontes</dt><dd>22</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 21 verdes, 61 azuls, 70 rojas, 7 negras"><i class="d-verde" style="flex:0.0878"></i><i class="d-azul" style="flex:0.3932"></i><i class="d-roja" style="flex:0.4780"></i><i class="d-negra" style="flex:0.0410"></i></span>
+    <p class="snow-chip" data-snow="sierra-nevada" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="sierra-nevada"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="candanchu" data-name="astún y candanchú" data-zone="pirineo-aragones" data-km="68" data-max="2272" data-min="1514" data-drop="758" data-lifts="41" data-3d="1">
+  <a class="card-media" href="../estaciones/astun-candanchu/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/img/estaciones/candanchu-640.webp" alt="" width="640" height="400">
+    <span class="tag tag-3d"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.500v-9L12 3z"/><path d="M4 7.5 12 12l8-4.500M12 12v9"/></svg> Mapa 3D</span>
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Pirineo aragonés · Huesca</p>
+    <h3><a href="../estaciones/astun-candanchu/">Astún y Candanchú</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>68 km</dd></div>
+      <div><dt>Cotas</dt><dd>1514–2272 m</dd></div>
+      <div><dt>Remontes</dt><dd>41</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 20 verdes, 42 azuls, 41 rojas, 30 negras, 3 sin clasificar"><i class="d-verde" style="flex:0.0748"></i><i class="d-azul" style="flex:0.2639"></i><i class="d-roja" style="flex:0.3592"></i><i class="d-negra" style="flex:0.2845"></i><i class="d-sin" style="flex:0.0176"></i></span>
+    <p class="snow-chip" data-snow="candanchu" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="candanchu"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="cerler" data-name="cerler" data-zone="pirineo-aragones" data-km="61" data-max="2617" data-min="1503" data-drop="1114" data-lifts="20" data-3d="0">
+  <a class="card-media" href="../estaciones/cerler/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/img/estaciones/cerler-640.webp" alt="" width="640" height="400">
+    
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Pirineo aragonés · Huesca</p>
+    <h3><a href="../estaciones/cerler/">Cerler</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>61 km</dd></div>
+      <div><dt>Cotas</dt><dd>1503–2617 m</dd></div>
+      <div><dt>Remontes</dt><dd>20</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 17 verdes, 37 azuls, 33 rojas, 15 negras, 1 sin clasificar"><i class="d-verde" style="flex:0.0603"></i><i class="d-azul" style="flex:0.4088"></i><i class="d-roja" style="flex:0.3697"></i><i class="d-negra" style="flex:0.1596"></i><i class="d-sin" style="flex:0.0016"></i></span>
+    <p class="snow-chip" data-snow="cerler" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="cerler"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="panticosa" data-name="panticosa" data-zone="pirineo-aragones" data-km="18" data-max="2203" data-min="1145" data-drop="1058" data-lifts="15" data-3d="1">
+  <a class="card-media" href="../estaciones/panticosa/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/img/estaciones/panticosa-640.webp" alt="" width="640" height="400">
+    <span class="tag tag-3d"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.500v-9L12 3z"/><path d="M4 7.5 12 12l8-4.500M12 12v9"/></svg> Mapa 3D</span>
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Pirineo aragonés · Huesca</p>
+    <h3><a href="../estaciones/panticosa/">Panticosa</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>18 km</dd></div>
+      <div><dt>Cotas</dt><dd>1145–2203 m</dd></div>
+      <div><dt>Remontes</dt><dd>15</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 3 verdes, 15 azuls, 15 rojas, 3 negras"><i class="d-verde" style="flex:0.0222"></i><i class="d-azul" style="flex:0.3944"></i><i class="d-roja" style="flex:0.4556"></i><i class="d-negra" style="flex:0.1278"></i></span>
+    <p class="snow-chip" data-snow="panticosa" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="panticosa"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="boi-taull" data-name="boí taüll" data-zone="pirineo-catalan" data-km="36" data-max="2748" data-min="2039" data-drop="709" data-lifts="9" data-3d="1">
+  <a class="card-media is-plan" href="../estaciones/boi-taull/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/planos/boi-taull.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+    <span class="tag tag-3d"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.500v-9L12 3z"/><path d="M4 7.5 12 12l8-4.500M12 12v9"/></svg> Mapa 3D</span>
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Pirineo catalán · Lleida</p>
+    <h3><a href="../estaciones/boi-taull/">Boí Taüll</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>36 km</dd></div>
+      <div><dt>Cotas</dt><dd>2039–2748 m</dd></div>
+      <div><dt>Remontes</dt><dd>9</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 5 verdes, 7 azuls, 25 rojas, 15 negras"><i class="d-verde" style="flex:0.1003"></i><i class="d-azul" style="flex:0.1978"></i><i class="d-roja" style="flex:0.4178"></i><i class="d-negra" style="flex:0.2841"></i></span>
+    <p class="snow-chip" data-snow="boi-taull" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="boi-taull"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="espot" data-name="espot" data-zone="pirineo-catalan" data-km="20" data-max="2290" data-min="1511" data-drop="779" data-lifts="6" data-3d="1">
+  <a class="card-media is-plan" href="../estaciones/espot/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/planos/espot.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+    <span class="tag tag-3d"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.500v-9L12 3z"/><path d="M4 7.5 12 12l8-4.500M12 12v9"/></svg> Mapa 3D</span>
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Pirineo catalán · Lleida</p>
+    <h3><a href="../estaciones/espot/">Espot</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>20 km</dd></div>
+      <div><dt>Cotas</dt><dd>1511–2290 m</dd></div>
+      <div><dt>Remontes</dt><dd>6</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 4 verdes, 15 azuls, 7 rojas, 4 negras"><i class="d-verde" style="flex:0.0547"></i><i class="d-azul" style="flex:0.5174"></i><i class="d-roja" style="flex:0.2935"></i><i class="d-negra" style="flex:0.1343"></i></span>
+    <p class="snow-chip" data-snow="espot" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="espot"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="port-aine" data-name="port ainé" data-zone="pirineo-catalan" data-km="22" data-max="2425" data-min="1678" data-drop="747" data-lifts="8" data-3d="1">
+  <a class="card-media is-plan" href="../estaciones/port-aine/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/planos/port-aine.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+    <span class="tag tag-3d"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.500v-9L12 3z"/><path d="M4 7.5 12 12l8-4.500M12 12v9"/></svg> Mapa 3D</span>
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Pirineo catalán · Lleida</p>
+    <h3><a href="../estaciones/port-aine/">Port Ainé</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>22 km</dd></div>
+      <div><dt>Cotas</dt><dd>1678–2425 m</dd></div>
+      <div><dt>Remontes</dt><dd>8</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 20 verdes, 7 azuls, 13 rojas, 6 negras"><i class="d-verde" style="flex:0.3744"></i><i class="d-azul" style="flex:0.1872"></i><i class="d-roja" style="flex:0.2511"></i><i class="d-negra" style="flex:0.1872"></i></span>
+    <p class="snow-chip" data-snow="port-aine" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="port-aine"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="la-molina" data-name="la molina" data-zone="pirineo-catalan" data-km="39" data-max="2347" data-min="1590" data-drop="757" data-lifts="14" data-3d="1">
+  <a class="card-media is-plan" href="../estaciones/la-molina/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/planos/la-molina.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+    <span class="tag tag-3d"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.500v-9L12 3z"/><path d="M4 7.5 12 12l8-4.500M12 12v9"/></svg> Mapa 3D</span>
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Pirineo catalán · Girona</p>
+    <h3><a href="../estaciones/la-molina/">La Molina</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>39 km</dd></div>
+      <div><dt>Cotas</dt><dd>1590–2347 m</dd></div>
+      <div><dt>Remontes</dt><dd>14</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 11 verdes, 31 azuls, 18 rojas, 3 negras"><i class="d-verde" style="flex:0.1513"></i><i class="d-azul" style="flex:0.4256"></i><i class="d-roja" style="flex:0.3846"></i><i class="d-negra" style="flex:0.0385"></i></span>
+    <p class="snow-chip" data-snow="la-molina" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="la-molina"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="masella" data-name="masella" data-zone="pirineo-catalan" data-km="60" data-max="2522" data-min="1615" data-drop="907" data-lifts="21" data-3d="1">
+  <a class="card-media is-plan" href="../estaciones/masella/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/planos/masella.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+    <span class="tag tag-3d"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.500v-9L12 3z"/><path d="M4 7.5 12 12l8-4.500M12 12v9"/></svg> Mapa 3D</span>
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Pirineo catalán · Girona</p>
+    <h3><a href="../estaciones/masella/">Masella</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>60 km</dd></div>
+      <div><dt>Cotas</dt><dd>1615–2522 m</dd></div>
+      <div><dt>Remontes</dt><dd>21</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 6 verdes, 46 azuls, 43 rojas, 13 negras"><i class="d-verde" style="flex:0.0233"></i><i class="d-azul" style="flex:0.4053"></i><i class="d-roja" style="flex:0.4518"></i><i class="d-negra" style="flex:0.1196"></i></span>
+    <p class="snow-chip" data-snow="masella" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="masella"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="port-del-comte" data-name="port del comte" data-zone="pirineo-catalan" data-km="27" data-max="2309" data-min="1705" data-drop="604" data-lifts="19" data-3d="1">
+  <a class="card-media is-plan" href="../estaciones/port-del-comte/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/planos/port-del-comte.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+    <span class="tag tag-3d"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.500v-9L12 3z"/><path d="M4 7.5 12 12l8-4.500M12 12v9"/></svg> Mapa 3D</span>
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Pirineo catalán · Lleida</p>
+    <h3><a href="../estaciones/port-del-comte/">Port del Comte</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>27 km</dd></div>
+      <div><dt>Cotas</dt><dd>1705–2309 m</dd></div>
+      <div><dt>Remontes</dt><dd>19</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 5 verdes, 16 azuls, 11 rojas, 3 negras, 1 sin clasificar"><i class="d-verde" style="flex:0.0637"></i><i class="d-azul" style="flex:0.5843"></i><i class="d-roja" style="flex:0.2772"></i><i class="d-negra" style="flex:0.0637"></i><i class="d-sin" style="flex:0.0112"></i></span>
+    <p class="snow-chip" data-snow="port-del-comte" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="port-del-comte"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="vall-de-nuria" data-name="vall de núria" data-zone="pirineo-catalan" data-km="6" data-max="2259" data-min="1964" data-drop="295" data-lifts="7" data-3d="1">
+  <a class="card-media is-plan" href="../estaciones/vall-de-nuria/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/planos/vall-de-nuria.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+    <span class="tag tag-3d"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.500v-9L12 3z"/><path d="M4 7.5 12 12l8-4.500M12 12v9"/></svg> Mapa 3D</span>
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Pirineo catalán · Girona</p>
+    <h3><a href="../estaciones/vall-de-nuria/">Vall de Núria</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>6 km</dd></div>
+      <div><dt>Cotas</dt><dd>1964–2259 m</dd></div>
+      <div><dt>Remontes</dt><dd>7</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 3 verdes, 11 azuls, 4 rojas, 2 negras"><i class="d-verde" style="flex:0.1250"></i><i class="d-azul" style="flex:0.4063"></i><i class="d-roja" style="flex:0.3438"></i><i class="d-negra" style="flex:0.1250"></i></span>
+    <p class="snow-chip" data-snow="vall-de-nuria" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="vall-de-nuria"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="vallter" data-name="vallter 2000" data-zone="pirineo-catalan" data-km="15" data-max="2496" data-min="2009" data-drop="487" data-lifts="10" data-3d="1">
+  <a class="card-media is-plan" href="../estaciones/vallter-2000/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/planos/vallter.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+    <span class="tag tag-3d"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.500v-9L12 3z"/><path d="M4 7.5 12 12l8-4.500M12 12v9"/></svg> Mapa 3D</span>
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Pirineo catalán · Girona</p>
+    <h3><a href="../estaciones/vallter-2000/">Vallter 2000</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>15 km</dd></div>
+      <div><dt>Cotas</dt><dd>2009–2496 m</dd></div>
+      <div><dt>Remontes</dt><dd>10</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 8 verdes, 16 azuls, 11 rojas, 4 negras"><i class="d-verde" style="flex:0.1333"></i><i class="d-azul" style="flex:0.4067"></i><i class="d-roja" style="flex:0.2800"></i><i class="d-negra" style="flex:0.1800"></i></span>
+    <p class="snow-chip" data-snow="vallter" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="vallter"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="valdesqui" data-name="valdesquí" data-zone="sistema-central" data-km="21" data-max="2263" data-min="1870" data-drop="393" data-lifts="15" data-3d="1">
+  <a class="card-media" href="../estaciones/valdesqui/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/img/estaciones/valdesqui-640.webp" alt="" width="640" height="400" loading="lazy" decoding="async">
+    <span class="tag tag-3d"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.500v-9L12 3z"/><path d="M4 7.5 12 12l8-4.500M12 12v9"/></svg> Mapa 3D</span>
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Sistema Central · Madrid</p>
+    <h3><a href="../estaciones/valdesqui/">Valdesquí</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>21 km</dd></div>
+      <div><dt>Cotas</dt><dd>1870–2263 m</dd></div>
+      <div><dt>Remontes</dt><dd>15</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 13 verdes, 18 azuls, 6 rojas, 2 negras, 1 sin clasificar"><i class="d-verde" style="flex:0.2780"></i><i class="d-azul" style="flex:0.5805"></i><i class="d-roja" style="flex:0.0829"></i><i class="d-negra" style="flex:0.0439"></i><i class="d-sin" style="flex:0.0146"></i></span>
+    <p class="snow-chip" data-snow="valdesqui" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="valdesqui"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="alto-campoo" data-name="alto campoo" data-zone="cordillera-cantabrica" data-km="20" data-max="2121" data-min="1643" data-drop="478" data-lifts="11" data-3d="0">
+  <a class="card-media" href="../estaciones/alto-campoo/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/img/estaciones/alto-campoo-640.webp" alt="" width="640" height="400" loading="lazy" decoding="async">
+    
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Cordillera Cantábrica · Cantabria</p>
+    <h3><a href="../estaciones/alto-campoo/">Alto Campoo</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>20 km</dd></div>
+      <div><dt>Cotas</dt><dd>1643–2121 m</dd></div>
+      <div><dt>Remontes</dt><dd>11</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 6 verdes, 14 azuls, 14 rojas, 1 sin clasificar"><i class="d-verde" style="flex:0.1095"></i><i class="d-azul" style="flex:0.4527"></i><i class="d-roja" style="flex:0.4279"></i><i class="d-sin" style="flex:0.0100"></i></span>
+    <p class="snow-chip" data-snow="alto-campoo" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="alto-campoo"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="valdezcaray" data-name="valdezcaray" data-zone="sistema-iberico" data-km="16" data-max="2135" data-min="1547" data-drop="588" data-lifts="10" data-3d="0">
+  <a class="card-media" href="../estaciones/valdezcaray/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/img/estaciones/valdezcaray-640.webp" alt="" width="640" height="400" loading="lazy" decoding="async">
+    
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Sistema Ibérico · La Rioja</p>
+    <h3><a href="../estaciones/valdezcaray/">Valdezcaray</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>16 km</dd></div>
+      <div><dt>Cotas</dt><dd>1547–2135 m</dd></div>
+      <div><dt>Remontes</dt><dd>10</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 7 verdes, 9 azuls, 13 rojas, 3 negras"><i class="d-verde" style="flex:0.1677"></i><i class="d-azul" style="flex:0.3292"></i><i class="d-roja" style="flex:0.3913"></i><i class="d-negra" style="flex:0.1118"></i></span>
+    <p class="snow-chip" data-snow="valdezcaray" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="valdezcaray"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="grandvalira" data-name="grandvalira" data-zone="andorra" data-km="164" data-max="2619" data-min="1674" data-drop="945" data-lifts="76" data-3d="0">
+  <a class="card-media" href="../estaciones/grandvalira/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/img/estaciones/grandvalira-640.webp" alt="" width="640" height="400" loading="lazy" decoding="async">
+    
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Andorra · Andorra</p>
+    <h3><a href="../estaciones/grandvalira/">Grandvalira</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>164 km</dd></div>
+      <div><dt>Cotas</dt><dd>1674–2619 m</dd></div>
+      <div><dt>Remontes</dt><dd>76</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 29 verdes, 129 azuls, 71 rojas, 27 negras"><i class="d-verde" style="flex:0.0648"></i><i class="d-azul" style="flex:0.4911"></i><i class="d-roja" style="flex:0.3268"></i><i class="d-negra" style="flex:0.1173"></i></span>
+    <p class="snow-chip" data-snow="grandvalira" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="grandvalira"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="pal-arinsal" data-name="pal arinsal" data-zone="andorra" data-km="39" data-max="2534" data-min="1470" data-drop="1064" data-lifts="30" data-3d="0">
+  <a class="card-media" href="../estaciones/pal-arinsal/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/img/estaciones/pal-arinsal-640.webp" alt="" width="640" height="400" loading="lazy" decoding="async">
+    
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Andorra · Andorra</p>
+    <h3><a href="../estaciones/pal-arinsal/">Pal Arinsal</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>39 km</dd></div>
+      <div><dt>Cotas</dt><dd>1470–2534 m</dd></div>
+      <div><dt>Remontes</dt><dd>30</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 7 verdes, 30 azuls, 20 rojas, 4 negras, 2 sin clasificar"><i class="d-verde" style="flex:0.0803"></i><i class="d-azul" style="flex:0.5259"></i><i class="d-roja" style="flex:0.3135"></i><i class="d-negra" style="flex:0.0777"></i><i class="d-sin" style="flex:0.0026"></i></span>
+    <p class="snow-chip" data-snow="pal-arinsal" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="pal-arinsal"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="saint-lary" data-name="saint-lary" data-zone="pirineo-frances" data-km="49" data-max="2339" data-min="1596" data-drop="743" data-lifts="19" data-3d="0">
+  <a class="card-media" href="../estaciones/saint-lary/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/img/estaciones/saint-lary-640.webp" alt="" width="640" height="400" loading="lazy" decoding="async">
+    
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Pirineo francés · Altos Pirineos</p>
+    <h3><a href="../estaciones/saint-lary/">Saint-Lary</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>49 km</dd></div>
+      <div><dt>Cotas</dt><dd>1596–2339 m</dd></div>
+      <div><dt>Remontes</dt><dd>19</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 12 verdes, 58 azuls, 20 rojas, 11 negras, 3 sin clasificar"><i class="d-verde" style="flex:0.0654"></i><i class="d-azul" style="flex:0.5378"></i><i class="d-roja" style="flex:0.2229"></i><i class="d-negra" style="flex:0.1656"></i><i class="d-sin" style="flex:0.0082"></i></span>
+    <p class="snow-chip" data-snow="saint-lary" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="saint-lary"> Comparar</label>
+  </div>
+</article>
+<article class="card st-card" data-id="font-romeu" data-name="font-romeu pyrénées 2000" data-zone="pirineo-frances" data-km="36" data-max="2212" data-min="1716" data-drop="496" data-lifts="24" data-3d="0">
+  <a class="card-media" href="../estaciones/font-romeu/" tabindex="-1" aria-hidden="true">
+    <img src="../assets/img/estaciones/font-romeu-640.webp" alt="" width="640" height="400" loading="lazy" decoding="async">
+    
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">Pirineo francés · Pirineos Orientales</p>
+    <h3><a href="../estaciones/font-romeu/">Font-Romeu Pyrénées 2000</a></h3>
+    <dl class="mini">
+      <div><dt>Pistas</dt><dd>36 km</dd></div>
+      <div><dt>Cotas</dt><dd>1716–2212 m</dd></div>
+      <div><dt>Remontes</dt><dd>24</dd></div>
+    </dl>
+    <span class="dbar" role="img" aria-label="Pistas: 20 verdes, 20 azuls, 13 rojas, 11 negras"><i class="d-verde" style="flex:0.3631"></i><i class="d-azul" style="flex:0.2542"></i><i class="d-roja" style="flex:0.1872"></i><i class="d-negra" style="flex:0.1955"></i></span>
+    <p class="snow-chip" data-snow="font-romeu" hidden></p>
+    <label class="cmp"><input type="checkbox" data-compare="font-romeu"> Comparar</label>
+  </div>
+</article></div>
+  <p class="empty" id="f-empty" hidden>Ninguna estación coincide con esos filtros.</p>
+</section>
+<section class="sec wrap" id="comparar">
+  <div class="sec-head">
+  <div><p class="eyebrow">Comparador</p><h2>Compara estaciones</h2><p class="lead">Marca «Comparar» en hasta cuatro estaciones o elige un grupo para empezar.</p></div>
+  
+</div>
+  <div class="chips" id="cmp-presets">
+    <button type="button" class="chip" data-preset="baqueira,formigal,sierra-nevada,grandvalira">Las más grandes</button>
+    <button type="button" class="chip" data-preset="formigal,candanchu,cerler,panticosa">Pirineo aragonés</button>
+    <button type="button" class="chip" data-preset="baqueira,boi-taull,la-molina,masella">Pirineo catalán</button>
+    <button type="button" class="chip" data-preset="valdesqui,valdezcaray,alto-campoo,sierra-nevada">Fuera del Pirineo</button>
+  </div>
+  <div class="cmp-table" id="cmp-table"><p class="empty">Todavía no has elegido estaciones.</p></div>
+  <p class="fine">Kilómetros y número de pistas: trazados de descenso de OpenStreetMap, medidos en planta. Pueden diferir de las cifras comerciales de cada estación, que cuentan itinerarios y anchos de forma distinta. Cotas: punto más bajo y más alto de pistas y remontes sobre el modelo de relieve.</p>
+</section>
+<div class="tray" id="tray" hidden><span id="tray-text"></span><a class="btn btn-light btn-sm" href="#comparar">Ver comparación</a><button type="button" class="btn btn-clear btn-sm" id="tray-clear">Quitar</button></div>
+</main>
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="../"><span>Cota</span></a>
+      <p>Mapas, nieve y viajes de esquí con amigos. Un proyecto independiente: no es la web oficial de ninguna estación.</p>
+    </div>
+    <div><h2>Explorar</h2><ul><li><a href="../estaciones/">Estaciones</a></li><li><a href="../mapas/">Mapas 3D</a></li><li><a href="../nieve/">Nieve prevista</a></li><li><a href="../agenda/">Agenda</a></li></ul></div>
+    <div><h2>Cota</h2><ul><li><a href="../app/">La app para Android</a></li><li><a href="../cuenta/">Mi cuenta</a></li><li><a href="../app/#hoja-de-ruta">Hoja de ruta</a></li></ul></div>
+    <div><h2>Transparencia</h2><ul><li><a href="../creditos/">Créditos y licencias</a></li><li><a href="../privacidad/">Privacidad</a></li></ul></div>
+  </div>
+  <div class="wrap foot-note">
+    <p>El estado de pistas y remontes lo publica cada estación: consulta siempre su parte oficial antes de salir. Cartografía © colaboradores de OpenStreetMap; previsión de Open-Meteo. <a href="../creditos/">Todas las fuentes</a>.</p>
+    <p>© 2026 Cota</p>
+  </div>
+</footer>
+<script type="application/json" id="page-data">{"stations":[{"id":"baqueira","slug":"baqueira-beret","name":"Baqueira-Beret","zone":"Pirineo catalán","province":"Lleida","country":"España","km":147,"pistes":158,"min":1476,"max":2601,"drop":1125,"lifts":36,"by":{"verde":14,"azul":62,"roja":59,"negra":23,"sin":0},"families":{"telecabina":2,"telesilla":18,"telesqui":9,"cinta":7},"longest":{"name":"Colhet de Marimanha","km":4.2,"color":"azul"},"lat":42.7018,"lon":0.9698,"viewer":"mapa","snow":true},{"id":"formigal","slug":"formigal","name":"Formigal","zone":"Pirineo aragonés","province":"Huesca","country":"España","km":102,"pistes":104,"min":1501,"max":2380,"drop":879,"lifts":24,"by":{"verde":3,"azul":28,"roja":33,"negra":37,"sin":3},"families":{"telecabina":0,"telesilla":13,"telesqui":6,"cinta":5},"longest":{"name":"El Bosque","km":3.4,"color":"roja"},"lat":42.7717,"lon":-0.406,"viewer":"mapa-formigal","snow":false},{"id":"sierra-nevada","slug":"sierra-nevada","name":"Sierra Nevada","zone":"Sierra Nevada","province":"Granada","country":"España","km":102,"pistes":159,"min":2138,"max":3301,"drop":1163,"lifts":22,"by":{"verde":21,"azul":61,"roja":70,"negra":7,"sin":0},"families":{"telecabina":2,"telesilla":14,"telesqui":1,"cinta":5},"longest":{"name":"Loma Dílar","km":3.7,"color":"azul"},"lat":37.0728,"lon":-3.3872,"viewer":"mapa-sierra-nevada","snow":false},{"id":"candanchu","slug":"astun-candanchu","name":"Astún y Candanchú","zone":"Pirineo aragonés","province":"Huesca","country":"España","km":68,"pistes":136,"min":1514,"max":2272,"drop":758,"lifts":41,"by":{"verde":20,"azul":42,"roja":41,"negra":30,"sin":3},"families":{"telecabina":0,"telesilla":12,"telesqui":21,"cinta":8},"longest":{"name":"Loma Verde","km":2.9,"color":"negra"},"lat":42.7922,"lon":-0.5195,"viewer":"mapa-candanchu","snow":false},{"id":"cerler","slug":"cerler","name":"Cerler","zone":"Pirineo aragonés","province":"Huesca","country":"España","km":61,"pistes":103,"min":1503,"max":2617,"drop":1114,"lifts":20,"by":{"verde":17,"azul":37,"roja":33,"negra":15,"sin":1},"families":{"telecabina":0,"telesilla":10,"telesqui":4,"cinta":6},"longest":{"name":"Canal Amplla","km":2.3,"color":"negra"},"lat":42.5602,"lon":0.5558,"viewer":null,"snow":false},{"id":"panticosa","slug":"panticosa","name":"Panticosa","zone":"Pirineo aragonés","province":"Huesca","country":"España","km":18,"pistes":36,"min":1145,"max":2203,"drop":1058,"lifts":15,"by":{"verde":3,"azul":15,"roja":15,"negra":3,"sin":0},"families":{"telecabina":1,"telesilla":5,"telesqui":4,"cinta":5},"longest":{"name":"Mazaranuala","km":1.3,"color":"roja"},"lat":42.7004,"lon":-0.2703,"viewer":"mapa-panticosa","snow":false},{"id":"boi-taull","slug":"boi-taull","name":"Boí Taüll","zone":"Pirineo catalán","province":"Lleida","country":"España","km":36,"pistes":52,"min":2039,"max":2748,"drop":709,"lifts":9,"by":{"verde":5,"azul":7,"roja":25,"negra":15,"sin":0},"families":{"telecabina":0,"telesilla":6,"telesqui":2,"cinta":1},"longest":{"name":"Vista Aran - Collbirrós","km":3.4,"color":"roja"},"lat":42.4729,"lon":0.8751,"viewer":"mapa-boi-taull","snow":false},{"id":"espot","slug":"espot","name":"Espot","zone":"Pirineo catalán","province":"Lleida","country":"España","km":20,"pistes":30,"min":1511,"max":2290,"drop":779,"lifts":6,"by":{"verde":4,"azul":15,"roja":7,"negra":4,"sin":0},"families":{"telecabina":0,"telesilla":3,"telesqui":1,"cinta":2},"longest":{"name":"Camí del Llop","km":2.1,"color":"azul"},"lat":42.5482,"lon":1.0797,"viewer":"mapa-espot","snow":false},{"id":"port-aine","slug":"port-aine","name":"Port Ainé","zone":"Pirineo catalán","province":"Lleida","country":"España","km":22,"pistes":46,"min":1678,"max":2425,"drop":747,"lifts":8,"by":{"verde":20,"azul":7,"roja":13,"negra":6,"sin":0},"families":{"telecabina":0,"telesilla":3,"telesqui":3,"cinta":2},"longest":{"name":"Estadi","km":1.5,"color":"roja"},"lat":42.419,"lon":1.2121,"viewer":"mapa-port-aine","snow":false},{"id":"la-molina","slug":"la-molina","name":"La Molina","zone":"Pirineo catalán","province":"Girona","country":"España","km":39,"pistes":63,"min":1590,"max":2347,"drop":757,"lifts":14,"by":{"verde":11,"azul":31,"roja":18,"negra":3,"sin":0},"families":{"telecabina":1,"telesilla":9,"telesqui":1,"cinta":3},"longest":{"name":"Volta Muntanya Sagrada","km":1.8,"color":"azul"},"lat":42.3239,"lon":1.9434,"viewer":"mapa-la-molina","snow":false},{"id":"masella","slug":"masella","name":"Masella","zone":"Pirineo catalán","province":"Girona","country":"España","km":60,"pistes":108,"min":1615,"max":2522,"drop":907,"lifts":21,"by":{"verde":6,"azul":46,"roja":43,"negra":13,"sin":0},"families":{"telecabina":2,"telesilla":5,"telesqui":10,"cinta":4},"longest":{"name":"Barcelona","km":2.9,"color":"negra"},"lat":42.3352,"lon":1.9034,"viewer":"mapa-masella","snow":false},{"id":"port-del-comte","slug":"port-del-comte","name":"Port del Comte","zone":"Pirineo catalán","province":"Lleida","country":"España","km":27,"pistes":36,"min":1705,"max":2309,"drop":604,"lifts":19,"by":{"verde":5,"azul":16,"roja":11,"negra":3,"sin":1},"families":{"telecabina":0,"telesilla":6,"telesqui":9,"cinta":4},"longest":{"name":"la Serp","km":2.8,"color":"azul"},"lat":42.1678,"lon":1.5505,"viewer":"mapa-port-del-comte","snow":false},{"id":"vall-de-nuria","slug":"vall-de-nuria","name":"Vall de Núria","zone":"Pirineo catalán","province":"Girona","country":"España","km":6,"pistes":20,"min":1964,"max":2259,"drop":295,"lifts":7,"by":{"verde":3,"azul":11,"roja":4,"negra":2,"sin":0},"families":{"telecabina":1,"telesilla":1,"telesqui":3,"cinta":2},"longest":{"name":"Mulleres","km":0.9,"color":"roja"},"lat":42.3966,"lon":2.158,"viewer":"mapa-vall-de-nuria","snow":false},{"id":"vallter","slug":"vallter-2000","name":"Vallter 2000","zone":"Pirineo catalán","province":"Girona","country":"España","km":15,"pistes":39,"min":2009,"max":2496,"drop":487,"lifts":10,"by":{"verde":8,"azul":16,"roja":11,"negra":4,"sin":0},"families":{"telecabina":0,"telesilla":2,"telesqui":5,"cinta":3},"longest":{"name":"El Xalet","km":1.4,"color":"azul"},"lat":42.4253,"lon":2.2554,"viewer":"mapa-vallter","snow":false},{"id":"valdesqui","slug":"valdesqui","name":"Valdesquí","zone":"Sistema Central","province":"Madrid","country":"España","km":21,"pistes":40,"min":1870,"max":2263,"drop":393,"lifts":15,"by":{"verde":13,"azul":18,"roja":6,"negra":2,"sin":1},"families":{"telecabina":0,"telesilla":6,"telesqui":7,"cinta":2},"longest":{"name":"Las Zetas","km":1.5,"color":"verde"},"lat":40.7978,"lon":-3.9713,"viewer":"mapa-valdesqui","snow":false},{"id":"alto-campoo","slug":"alto-campoo","name":"Alto Campoo","zone":"Cordillera Cantábrica","province":"Cantabria","country":"España","km":20,"pistes":35,"min":1643,"max":2121,"drop":478,"lifts":11,"by":{"verde":6,"azul":14,"roja":14,"negra":0,"sin":1},"families":{"telecabina":0,"telesilla":4,"telesqui":6,"cinta":1},"longest":{"name":"Río Híjar","km":1.5,"color":"azul"},"lat":43.038,"lon":-4.3895,"viewer":null,"snow":false},{"id":"valdezcaray","slug":"valdezcaray","name":"Valdezcaray","zone":"Sistema Ibérico","province":"La Rioja","country":"España","km":16,"pistes":32,"min":1547,"max":2135,"drop":588,"lifts":10,"by":{"verde":7,"azul":9,"roja":13,"negra":3,"sin":0},"families":{"telecabina":0,"telesilla":7,"telesqui":3,"cinta":0},"longest":{"name":"Campos Blancos","km":1.7,"color":"azul"},"lat":42.2521,"lon":-2.9694,"viewer":null,"snow":false},{"id":"grandvalira","slug":"grandvalira","name":"Grandvalira","zone":"Andorra","province":"Andorra","country":"Andorra","km":164,"pistes":256,"min":1674,"max":2619,"drop":945,"lifts":76,"by":{"verde":29,"azul":129,"roja":71,"negra":27,"sin":0},"families":{"telecabina":4,"telesilla":29,"telesqui":34,"cinta":9},"longest":{"name":"Gall de Bosc","km":6.4,"color":"azul"},"lat":42.5488,"lon":1.6735,"viewer":null,"snow":false},{"id":"pal-arinsal","slug":"pal-arinsal","name":"Pal Arinsal","zone":"Andorra","province":"Andorra","country":"Andorra","km":39,"pistes":63,"min":1470,"max":2534,"drop":1064,"lifts":30,"by":{"verde":7,"azul":30,"roja":20,"negra":4,"sin":2},"families":{"telecabina":2,"telesilla":12,"telesqui":7,"cinta":9},"longest":{"name":"Les Fonts","km":2.4,"color":"azul"},"lat":42.5513,"lon":1.4635,"viewer":null,"snow":false},{"id":"saint-lary","slug":"saint-lary","name":"Saint-Lary","zone":"Pirineo francés","province":"Altos Pirineos","country":"Francia","km":49,"pistes":104,"min":1596,"max":2339,"drop":743,"lifts":19,"by":{"verde":12,"azul":58,"roja":20,"negra":11,"sin":3},"families":{"telecabina":1,"telesilla":7,"telesqui":7,"cinta":4},"longest":{"name":"Balcon Mouscades 3","km":1.6,"color":"azul"},"lat":42.8224,"lon":0.2577,"viewer":null,"snow":false},{"id":"font-romeu","slug":"font-romeu","name":"Font-Romeu Pyrénées 2000","zone":"Pirineo francés","province":"Pirineos Orientales","country":"Francia","km":36,"pistes":64,"min":1716,"max":2212,"drop":496,"lifts":24,"by":{"verde":20,"azul":20,"roja":13,"negra":11,"sin":0},"families":{"telecabina":0,"telesilla":9,"telesqui":10,"cinta":5},"longest":{"name":"Fornells","km":2.3,"color":"verde"},"lat":42.5317,"lon":2.0352,"viewer":null,"snow":false}]}</script>
+<script type="module" src="../assets/js/site-MY2CIYIR.js"></script>
+<script type="module" src="../assets/js/stations-PQRSLEGX.js"></script>
+</body>
+</html>
